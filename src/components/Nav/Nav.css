@@ -1,0 +1,177 @@
+/* NAV */
+* {
+    transition: all 300ms;
+
+}
+
+nav {
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(209, 197, 209, 0.2);
+	box-shadow: 0px 10px 15px -10px rgba(209, 197, 209, 1);
+}
+
+#nav-title {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
+
+.pointer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: calc(100% / 8);
+	height: 60px;
+	text-align: center;
+	border-right: 1px solid rgb(220, 220, 220);
+	cursor: pointer;
+	background-color: white;
+}
+
+.pointer:last-child {
+	border: 0px;
+}
+
+.pointer:hover {
+	background-color: rgba(209, 197, 209, 0.2);
+	text-decoration: underline;
+}
+
+.pointer a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+    padding: 5px;
+}
+
+.outlet img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.hide {
+	display: none;
+	width: calc(100% - 30%);
+	position: absolute;
+	z-index: 200;
+	border: 1px solid #f0f0f0;
+	border-top: 0;
+	padding: 15px 16px;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: 180px auto;
+	border-top: 1px solid #ececec;
+	background-color: white;
+}
+
+.pointer:hover .hide {
+	display: block;
+}
+
+.full-hide {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+
+.hide-nav {
+	width: calc(100% / 3);
+	height: 100px;
+	display: flex;
+	margin: 10px 0px;
+}
+
+.left-hide-nav {
+	width: 20%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.left-hide-nav img {
+	width: 80%;
+}
+
+.right-hide-nav {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.up-hide-nav p {
+	font-size: 14px;
+	font-weight: 600;
+	font-family: sans-serif;
+	color: orangered;
+	margin: 5px;
+}
+
+.down-hide-nav {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+}
+
+.down-hide-nav a {
+	margin: 5px;
+}
+
+.down-hide-nav a {
+	font-size: 12px;
+	font-weight: 200;
+}
+
+.down-hide-nav a:hover {
+	text-decoration: underline;
+}
+
+.outlet {
+    padding: 0px !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1400px ) {
+    
+    .hide {
+        width: 100% !important;
+    }
+
+    .hide-nav {
+        width: calc(100% / 2 - 80px);
+        height: 100px;
+        display: flex;
+        margin: 40px 10px 40px 0px;
+    }
+
+    .full-hide {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100% !important;
+    }
+
+}

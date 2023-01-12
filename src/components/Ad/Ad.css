@@ -1,0 +1,23 @@
+.st0 { fill: #E05626; } 
+.st1 { fill: #FFFFFF; }
+
+.Ad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: var(--adColor);
+    column-gap: 5px;
+}
+
+.Ad span svg {
+    width: 30px;
+}
+
+.Ad p {
+    font-family: var(--adFont);
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+}

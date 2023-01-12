@@ -1,0 +1,25 @@
+.bestAD>div>img {
+    width: 50%;
+}
+
+.bestAd {
+    display: flex;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+
+    .bestAD>div>img {
+        width: 100%;
+    }
+
+    .bestAd {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        row-gap: 5px;
+    }
+    
+}

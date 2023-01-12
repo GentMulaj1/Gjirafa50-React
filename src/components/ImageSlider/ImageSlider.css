@@ -1,0 +1,27 @@
+.countiner-style {
+    height: 45vh;
+    width: 100%;
+    position: relative;
+    transition: all 500ms;
+}
+
+.countiner-style div {
+    height: 45vh;
+    background-position: center;
+    background-size: cover !important;
+
+}
+
+@media screen and (max-width: 768px) {
+    .countiner-style {
+        height: 20vh;
+    }
+    
+    .countiner-style div {
+        height: 20vh;
+        background-position: center;
+        background-size: cover !important;
+    }
+
+
+}
